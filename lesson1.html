@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang ='en'>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+        <link rel="stylesheet" href="lesson1.css">
+
+        <!-- PRISM -->
+        <link rel="stylesheet" href="prism.css" />
+        <script src="prism.js"></script>
+        <title>HTML Structure</title>
+        
+    </head>
+    <!-- BODY -->
+    <body>
+        <div class="menu">
+            Table of contents <br>
+            <a href="#content1">1. The overall HTML structure</a><br>
+            <a href="#content2">2. The HEAD tag explained</a><br>
+            <a href="#content3">3. The PARAGRAPH tag explained</a><br>
+            <a href="#content4">4. Text Decoration</a><br>
+            <a href="#content5">5. Unordered and Ordered List</a><br>
+            <a href="#content6">6. Image</a><br>
+            <a href="#content7">7. Video</a><br>
+            <a href="#content8">8. Link - a - anchor tag with href attribute</a><br>
+            <a href="#content9">9. Table</a><br>
+            <a href="#content10">10. Form</a><br>
+            <a href="#content11">11. What is iframe</a><br>
+        </div>
+
+        <!-- CONTENT -->
+        <main>
+        <div id="content1">
+            <h2>1. The overall HTML structure</h2>
+            <a href="#content11">Go to the edior</a> to play around with your HTML coding!
+            
+            <pre class="language-markup"><code>
+                &lt;!-- DECLARE THE HTML DOCUMENT -->
+                &lt;!DOCTYPE html>
+                &lt;!-- &lt;html> tag -->
+                &lt;html lang='en'>
+                    &lt;!-- &lt;head> tag -->
+                    &lt;head>
+                        &lt;title>HTML Basic Structure Example&lt;/title>
+                        &lt;meta charset="utf-8" />
+                    &lt;/head>
+                    &lt;!-- &lt;body> tag -->
+                    &lt;body>
+                        This is the content of the webpage
+                        &lt;!-- h1 to h6 heading tag -->
+                        &lt;h1>This is h1 tag&lt;/h1>
+                        &lt;h2>This is h2 tag&lt;/h2>
+                        &lt;p>This is a paragraph tag&lt;/p>
+                        &lt;img src="picture link" alt="This is a picture description" />
+                        &lt;a href="link">Click me&lt;/a>
+                        &lt;ul>This is an unordered list&lt;/ul>
+                        &lt;ol>This is an ordered list&lt;/ol>
+                        &lt;table>This is table tag&lt;/table>
+                        &lt;input /> &lt;!-- Create input tag for users to input some info -->
+                        &lt;button>&lt;/button> &lt;!-- Create button such as Submit button -->
+                        &lt;div>&lt;/div> &lt;!-- The &lt;div> tag defines a division or a section in an HTML document. -->
+                    &lt;/body&gt;
+            &lt;/html&gt;
+            </code>
+        </div>
+
+        <div id="content2">
+            <h2>2. The HEAD tag explained</h2>
+            <a href="#content11">Go to the edior</a> to play around with your HTML coding!
+
+            <script type="text/plain" class="language-markup">
+                    <head> 
+                        <!-- <meta> tags communicate with the web browsers and search engines to provide info abt your page -->
+                        <title>HTML Structure</title>
+                        <!-- The Page Description will be appeared under the link of a search result 
+                        to persuade the searcher to click your webpage link -->
+                        <meta name='description' content='Page Description Here' />
+                        <!-- UTF-8 character set is used -->
+                        <meta charset="utf-8" />
+                        <!-- The viewport defines the visible areas of a webpage and varies depending on the device  -->
+                        <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+                        <!-- This links to your CSS file -->
+                        <link rel="stylesheet" href="lesson1.css">
+                    </head>
+                </script>           
+        </div>
+        <div id="content3">
+            <h2>3. The PARAGRAPH tag explained</h2>
+            <a href="#content11">Go to the edior</a> to play around with your HTML coding!
+
+            <script type="text/plain" class="language-markup">   
+                    <!-- Paragraph Spacing: Double-spaced line -->
+                    <p>This is the first line</p>
+                    <p>This is the second line</p>
+                    <!-- The <br> tag: Single-spaced line-->
+                    <p>This is the first line<br>This is the second line</p>
+                    <!-- HTML Non-breaking space: &nbsp; -->
+                    <p>This is the content &nbsp;&nbsp;&nbsp;&nbsp; This is another content</p>
+            </script>
+        </div>
+        <div id="content4">
+            <h2>4. Text Decoration</h2>
+            <a href="#content11">Go to the edior</a> to play around with your HTML coding!
+            <script type="text/plain" class="language-markup">   
+            <p>
+                <strong>Bold Text</strong><br>
+                <em>Italic Text</em><br>
+                <u>Underlined Text</u><br>
+                <strike>Strike Text</strike><br>
+            </p>
+            </script>
+        </div>
+        <div id="content5">
+            <h2>5. Unordered and Ordered List</h2>
+            <a href="#content11">Go to the edior</a> to play around with your HTML coding!
+            <script type="text/plain" class="language-markup">   
+                <ul>This is an unorder list:
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                </ul>
+
+                <ol>This is an order list:
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                </ol>
+            </script>
+        </div>
+        <div id="content6">
+            <h2>6. Image</h2>
+            <a href="#content11">Go to the edior</a> to play around with your HTML coding!
+            <script type="text/plain" class="language-markup"> 
+                <!--Relative file referencing:
+                    You have to place your image in the same folder with your html file -->
+                <img src='image.png' alt='img description' /> 
+                <!-- Absolute file referencing:
+                    You can fetch online img using the img link -->
+                <img src='https://upload.wikimedia.org/wikipedia/commons/d/de/Houston_night.jpg' alt='img description' />
+            </script>
+        </div>
+        <div id="content7">
+            <h2>7. Video</h2>
+            <a href="#content11">Go to the edior</a> to play around with your HTML coding!
+            <script type="text/plain" class="language-markup"> 
+                <!--control attribute lets users see the control menu-->
+                <video width='600' controls> 
+                    <source src='video.mp4' type='video/mp4'>
+                    Your browser does not support the video
+                </video>
+                <!-- Without control attribute, you have to add the autoplay attribute, otherwise the video can not be played -->
+                <!-- autoplay attribute does not work in mobile devices such as iPod and iPhone -->
+                <video width='600' autoplay> 
+                    <source src='video.mp4' type='video/mp4'>
+                    Your browser does not support the video
+                </video>
+
+            </script>
+        </div>
+        <div id="content8">
+            <h2>8. Link - a - anchor tag with href attribute</h2>
+            <a href="#content11">Go to the edior</a> to play around with your HTML coding!
+            <script type="text/plain" class="language-markup"> 
+                <!-- target="_blank" means open in new tab -->
+               <!-- Textual link -->
+                    <a href="link" target="_blank">Visit this web</a>
+               <!-- Image link -->
+                    <a href="link" target="_blank"><img src='image.png' alt='img description' /></a>
+               <!-- Link to a section of the page using anchor name (id)-->
+                    <a href='#content6'>Content 6</a>
+               <div id="content6">
+                <h2>6. Image</h2>
+               </div>
+            </script>
+        </div>
+        <div id="content9">
+            <h2>9. Table</h2>
+            <a href="#content11">Go to the edior</a> to play around with your HTML coding!
+            <script type="text/plain" class="language-markup"> 
+                <table width='100%' border='1px' bordercolor='black' cellspacing='2' cellpadding='2'>
+                    <!-- nowrap attribute can be added if you want text is not wrapped-->
+                    <thead>
+                        <th>ID</th>
+                        <th colspan='2'>Full Name</th> <!--colspan to merge your column-->
+                        <th>Age</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td></td>
+                        <td>First Name</td>
+                        <td>Last Name</td>
+                        <td></td>
+                      </tr>
+                        <tr>
+                            <!-- you can add align attribute -->
+                            <td align='left'>1</td>
+                            <td align='right'>Freya</td>
+                            <td align='center'>Smith</td>
+                            <td>18</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </script>
+        </div>
+
+        <div id="content10">
+            <h2>10. Form</h2>
+            <a href="#content11">Go to the edior</a> to play around with your HTML coding!
+            <p>Data Validation:<br>
+                - Email Format<br>
+                - Min/Max Length<br>
+                - Phone Number Format<br>
+            </p>
+            <h3>Post and Get Method</h3>
+            <table cellspacing="5px" cellpadding="20px">
+                <thead>
+                    <th>Compare</th>
+                    <th>GET</th>
+                    <th>POST</th>
+                </thead>
+                <tbody>
+                    <tr><td colspan="3">HTTP protocol facilitates communication between client and server</td></tr>
+                    <tr><td colspan="3">2 types of data transmission method: POST & GET</td></tr>
+                    <tr>
+                        <td></td>
+                        <td>GET requests data from a specified resource</td>
+                        <td>POST submits data to be processed to a specified resource</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Name/Value pair are sent in the URL string</td>
+                        <td>Sends name/value pairs in the HTTP message body</td>
+                    </tr>
+                    <tr>
+                        <td>Example</td>
+                        <td>send.php?fname=john&lname=smith</td>
+                        <td>POST send.php HTTP/1.1<br>Host: youaccel.com<br>fname=john&lname=smith</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Can be cahed<br>Remain in browser history<br>Should only be used to retrieve data<br>Have length restrictions<br>Should not be used for sensitive data<br>Can be bookmarked</td>
+                        <td>No restrictions on data length<br>Cannot be bookmarked<br>Do not remain in browser history<br>Requests are never cached</td>
+                    </tr>
+                </tbody>
+            </table>
+            <script type="text/plain" class="language-markup"> 
+                <form name="employment" action="send.php" method="post">
+                    <table>
+                        <tr>
+                            <td>Employment Application</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>First Name</td>
+                            <td><input type='text' name="fname" maxlength='50' /></td>
+                        </tr>
+                        <tr>
+                            <td>Last Name</td>
+                            <td><input type='text' name='lname' maxlength='50' /></td>
+                        </tr>
+                        <tr>
+                            <td>Position:</td>
+                            <td><select name="position">
+                                <option value="ac">Accountant</option>
+                                <option value="re">Receptionist</option>
+                                <option value="su">Supervisor</option>
+                                <option value="ad">Admin</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td>Experience Level</td>
+                            <td><select name="experience">
+                                <option value="ac">Entry Level</option>
+                                <option value="re">Junior Level</option>
+                                <option value="su">Senior Level</option>
+                                <option value="ad">Very Experienced</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td>Job Type</td>
+                            <td>
+                                <input type='checkbox' name='ft'/>Full-time
+                                <input type='checkbox' name='pt'/>Part-time
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Employment Satus</td>
+                            <td>
+                                <input type='radio' name="emstatus" value='employed'/>Employed
+                                <input type='radio' name="emstatus" value='unemployed'/>Unemployed
+                                <input type='radio' name="emstatus" value='student'/>Student
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Additional Comments:</td>
+                            <td>
+                                <textarea name="comment" cols="45" rows="5"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" name="Submit" value="Submit" />
+                                <input type="reset" name="reset" value="Reset" />
+    
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </script>
+            <h3>Example Form</h3>
+            <form name="employment" action="send.php" method="post">
+                <table>
+                    <tr>
+                        <td>Employment Application</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>First Name</td>
+                        <td><input type='text' name="fname" maxlength='50' /></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name</td>
+                        <td><input type='text' name='lname' maxlength='50' /></td>
+                    </tr>
+                    <tr>
+                        <td>Position:</td>
+                        <td><select name="position">
+                            <option value="ac">Accountant</option>
+                            <option value="re">Receptionist</option>
+                            <option value="su">Supervisor</option>
+                            <option value="ad">Admin</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td>Experience Level</td>
+                        <td><select name="experience">
+                            <option value="ac">Entry Level</option>
+                            <option value="re">Junior Level</option>
+                            <option value="su">Senior Level</option>
+                            <option value="ad">Very Experienced</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td>Job Type</td>
+                        <td>
+                            <input type='checkbox' name='ft'/>Full-time
+                            <input type='checkbox' name='pt'/>Part-time
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Employment Satus</td>
+                        <td>
+                            <input type='radio' name="emstatus" value='employed'/>Employed
+                            <input type='radio' name="emstatus" value='unemployed'/>Unemployed
+                            <input type='radio' name="emstatus" value='student'/>Student
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Additional Comments:</td>
+                        <td>
+                            <textarea name="comment" cols="45" rows="5"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" name="Submit" value="Submit" />
+                            <input type="reset" name="reset" value="Reset" />
+
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            
+        </div>
+        <div id="content11">
+            <h2>11. What is iframe</h2>
+            <p>iFrame means inline frame, is used to embed another document within current HTML document</p>
+            <script type="text/plain" class="language-markup"> 
+                <iframe src="https://liveweave.com/" width="100%" height="400">
+                    <p>Your browser does not support iframe</p>
+                </iframe>
+            </script>
+            <div id="iframe">
+                <iframe src="https://liveweave.com/" width="100%" height="1000" style="border:1px solid black">
+                    <p>Your browser does not support iframe</p>
+                </iframe>
+            </div>
+        </div>
+        
+    </main>
+        <div class="tab-bar">
+            <a href="lesson1.html">Lesson 1: Basic HTML</a><br>
+            <a href="l1_project1.html">Lesson 1 - HomePage Project</a><br>
+            <a href="l1_project1.html">Lesson 1 - Survey Project</a><br>
+            <a href="l1_project1.html">Lesson 2</a><br>
+            <a href="l1_project1.html">Lesson 2</a><br>
+            
+        </div>
+    </body>
+</html>

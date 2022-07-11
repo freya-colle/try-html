@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+    <link rel="stylesheet" href="lesson1.css">
+
+    <!-- PRISM -->
+    <link rel="stylesheet" href="prism.css" />
+    <script src="prism.js"></script>
+    <title>Lesson 1 - HomePage Project</title>
+    <style>
+        #solution{
+            display:none;
+        }
+        #show_solution{
+            margin: 20px;
+            padding: 20px;
+            font-size: medium;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 align="center">Project Overview:</h2>
+    <p align="center">Create a HomePage using table tag to outline the space as below:</p>
+    <!-- table -->
+    <table width="100%" height="60" border="" cellspacing="5" cellpadding="5">
+        <tr>
+            <td align="left">
+                <table width="547" border="0" align="center" cellpadding="1" cellspacing="1">
+                    <tr>
+                        <td align="center">Home</td>
+                        <td align="center">HTML</td>
+                        <td align="center">CSS</td>
+                        <td align="center">Basic JavaScript</td>
+                        <td>Advanced JavaScript</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table width="100%" height="100" border="0" cellspacing="5" cellpadding="5" bgcolor="#F0F0F0">
+        <tr>
+            <td align="center">
+                <table width="708" border="0" cellspacing="1" cellpading="1">
+                    <tr>
+                        <td width="338" align="left">
+                            <font color="black" size="5">Master your own<br><strong>Career</strong></font>
+                        </td>
+                        <td width="338" align="right">
+                            <font color="black" size="5"><strong>Try Your Best!</strong><br>Do not give up</font>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table width="100%" height="100" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+            <td align="center">
+                <table width="600">
+                    <tr>
+                        <td align="center">
+                            <img src="./img/Untitled.png" alt="img-description" width='980' height='300' />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table width="100%" height="100" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+            <td align="center">
+                <table width="730" border="0" cellspacing="1" cellpadding="1">
+                    <tr>
+                        <td width="726" align="center">
+                            <font color="black" size="6">Commit<br><strong>Dream. Plan. Create</strong></font>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table width="100%" height="100" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+            <td align="center">
+                <table width="730" border="0">
+                    <tr>
+                        <td align="center">
+                            <font size="4">Contact us today!</font>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <font size="4">Enter Your Email to Subscribe:</font>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" height="72" valign="top">
+                <form name="contact" method="post" action="send.php">
+                    <input type='email' value='email' name='email' />
+                    <input type='submit' value='submit' name='Submit' />
+                </form>
+            </td>
+
+        </tr>
+    </table>
+    <!-- valign: vertical alignment -->
+    <table align='center' width="80%" height="300" border="0" cellspacing="5" cellpadding="5">
+        <tr>
+            <td align="center" height="72" valign="top">
+                <table border="1" width="900" cellspacing="0" cellpading="8">
+                    <tr>
+                        <td align="center" width="268"><strong>ABOUT US</strong></td>
+                        <td align="center" width="268"><strong>OUR VISION</strong></td>
+                        <td align="center" width="268"><strong>SERVICES</strong></td>
+                    </tr>
+                    <tr>
+                        <td align="center">This is a sample para This is a sample para This is a sample paraThis is a
+                            sample paraThis is a sample paraThis is a sample paraThis is a sample paraThis is a sample
+                            para</td>
+                        <td align="center">This is a sample para This is a sample para This is a sample paraThis is a
+                            sample paraThis is a sample paraThis is a sample paraThis is a sample paraThis is a sample
+                            para</td>
+                        <td align="center">This is a sample para This is a sample para This is a sample paraThis is a
+                            sample paraThis is a sample paraThis is a sample paraThis is a sample paraThis is a sample
+                            para</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+
+    </table>
+    <table align='center' width="100%" height="60" border="0" cellspacing="5" cellpadding="5" bgcolor="black">
+        <tr>
+            <td align="center">
+                <font color="white" size="4"> Home - About -Sevices <br><br>
+                    @2015 by someone</font>
+            </td>
+        </tr>
+    </table>
+    <!-- <div id="iframe">
+        <h2>Do your project here:</h2>
+        <iframe src="https://liveweave.com/" width="100%" height="1000" style="border:1px solid black">
+            <p>Your browser does not support iframe</p>
+        </iframe>
+    </div> -->
+    <!-- SOURCE CODE -->
+    <!-- SHOW/HIDE BUTTON -->
+
+    <button onclick="show_solution()" id="show_solution">Show source code</button>
+    <script>
+        function show_solution() {
+            let x = document.getElementById('solution');
+            if (x.style.display == 'none'){
+                x.style.display = 'block';
+            }else{
+                x.style.display = 'none';
+            }
+        }
+    </script>
+    <div id="solution">
+        <script type="text/plain" class="language-markup">
+        <table width="100%" height="60" border="" cellspacing="5" cellpadding="5">
+        <tr>
+            <td align="left">
+                <table width="547" border="0" align="center" cellpadding="1" cellspacing="1">
+                    <tr>
+                        <td align="center">Home</td>
+                        <td align="center">HTML</td>
+                        <td align="center">CSS</td>
+                        <td align="center">Basic JavaScript</td>
+                        <td>Advanced JavaScript</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table width="100%" height="100" border="0" cellspacing="5" cellpadding="5" bgcolor="#F0F0F0">
+        <tr>
+            <td align="center">
+                <table width="708" border="0" cellspacing="1" cellpading="1">
+                    <tr>
+                        <td width="338" align="left">
+                            <font color="black" size="5">Master your own<br><strong>Career</strong></font>
+                        </td>
+                        <td width="338" align="right">
+                            <font color="black" size="5"><strong>Try Your Best!</strong><br>Do not give up</font>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table width="100%" height="100" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+            <td align="center">
+                <table width="600">
+                    <tr>
+                        <td align="center">
+                            <img src="./img/Untitled.png" alt="img-description" width='980' height='300' />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table width="100%" height="100" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+            <td align="center">
+                <table width="730" border="0" cellspacing="1" cellpadding="1">
+                    <tr>
+                        <td width="726" align="center">
+                            <font color="black" size="6">Commit<br><strong>Dream. Plan. Create</strong></font>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table width="100%" height="100" border="0" cellspacing="1" cellpadding="1">
+        <tr>
+            <td align="center">
+                <table width="730" border="0">
+                    <tr>
+                        <td align="center">
+                            <font size="4">Contact us today!</font>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <font size="4">Enter Your Email to Subscribe:</font>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" height="72" valign="top">
+                <form name="contact" method="post" action="send.php">
+                    <input type='email' value='email' name='email' />
+                    <input type='submit' value='submit' name='Submit' />
+                </form>
+            </td>
+
+        </tr>
+    </table>
+    <!--valign: vertical alignment-- >
+    <table align='center' width="80%" height="300" border="0" cellspacing="5" cellpadding="5">
+        <tr>
+            <td align="center" height="72" valign="top">
+                <table border="1" width="900" cellspacing="0" cellpading="8">
+                    <tr>
+                        <td align="center" width="268"><strong>ABOUT US</strong></td>
+                        <td align="center" width="268"><strong>OUR VISION</strong></td>
+                        <td align="center" width="268"><strong>SERVICES</strong></td>
+                    </tr>
+                    <tr>
+                        <td align="center">This is a sample para This is a sample para This is a sample paraThis is a
+                            sample paraThis is a sample paraThis is a sample paraThis is a sample paraThis is a sample
+                            para</td>
+                        <td align="center">This is a sample para This is a sample para This is a sample paraThis is a
+                            sample paraThis is a sample paraThis is a sample paraThis is a sample paraThis is a sample
+                            para</td>
+                        <td align="center">This is a sample para This is a sample para This is a sample paraThis is a
+                            sample paraThis is a sample paraThis is a sample paraThis is a sample paraThis is a sample
+                            para</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+
+    </table>
+    <table align='center' width="100%" height="60" border="0" cellspacing="5" cellpadding="5" bgcolor="black">
+        <tr>
+            <td align="center">
+               <font color="white" size="4"> Home - About -Sevices <br><br>
+                @2015 by someone</font>
+            </td>
+        </tr>
+    </table>
+    </script>
+    </div>
+</body>
+
+</html>
